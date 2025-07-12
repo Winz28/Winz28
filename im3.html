@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulsa Indosat</title>
+  <link rel="stylesheet" href="ff.css" />
+  <style>
+    .item.selected {
+      background-color: #b6e0ff;
+      border: 2px solid #007bff;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="close">
+    <p><a href="index.html" >X</a></p>
+</div>
+</header>
+<div class="container">
+  <div class="left">
+    <img src="im3.jpg" alt="Pln" class="logo">
+    <h2>INDOSAT</h2>
+    <h3>PULSA INDOSAT</h3>
+    <ol>
+      <li>Masukkan Nomor Indosat</li>
+      <li>Pilih Produk yang diinginkan</li>
+      <li>Pilih Metode Pembayaran</li>
+      <li>Masukkan Alamat Email untuk Invoice</li>
+      <li>Klik Beli Sekarang & Melakukan Pembayaran</li>
+      <li>Tunggu Beberapa Detik Pesanan masuk otomatis ke akun Anda.</li>
+    </ol>
+  </div>
+  <style>
+    .left {
+       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(25, 25, 25, 2.24)),
+              url('kartu.jpg') center/cover no-repeat;
+       background-blend-mode: darken;
+       color: white;
+     }
+  </style>
+  <div class="right">
+    <h3>Masukan Nomor</h3>
+    <input type="text" placeholder="Masukkan Nomor" class="input-id" id="userId">
+    <h3>Pilih Nominal Layanan</h3>
+    <div class="grid" id="produkList">
+        <div class="item">IM3 5.000<br><span>Rp 7.000</span></div>
+        <div class="item">IM3 10.000<br><span>Rp 12.000</span></div>
+        <div class="item">IM3 15.000<br><span>Rp 17.000</span></div>
+        <div class="item">IM3 25.000<br><span>Rp 27.000</span></div>
+        <div class="item">IM3 30.000<br><span>Rp 32.000</span></div>
+        <div class="item">IM3 40.000<br><span>Rp 42.000</span></div>
+        <div class="item">IM3 50.000<br><span>Rp 52.000</span></div>
+        <div class="item">IM3 60.000<br><span>Rp 62.000</span></div>
+        <div class="item">IM3 70.000<br><span>Rp 72.000</span></div>
+        <div class="item">IM3 80.000<br><span>Rp 82.000</span></div>
+        <div class="item">IM3 90.000<br><span>Rp 92.000</span></div>
+        <div class="item">IM3 100.000<br><span>Rp 102.000</span></div>
+        <div class="item">IM3 150.000<br><span>Rp 152.000</span></div>
+        <div class="item">IM3 200.000<br><span>Rp
+        202.000</span>
+        </div>
+    </div>
+    <section class="pembayaran">
+      <h3>Pilih Metode Pembayaran</h3>
+      <div class="pembayaran-opsi">
+        <label><input type="radio" name="metode" value="GoPay"> GoPay</label>
+        <label><input type="radio" name="metode" value="DANA"> DANA</label>
+        <label><input type="radio" name="metode" value="OVO"> OVO</label>
+        <label><input type="radio" name="metode" value="ShopeePay"> ShopeePay</label>
+        <label><input type="radio" name="metode" value="Uang Langsung"> Uang Langsung</label>
+        <label><input type="radio" name="metode" value="QRIS"> QRIS</label>
+        <label><input type="radio" name="metode" value="Virtual Account"> Virtual Account</label>
+        <label><input type="radio" name="metode" value="Pulsa"> Pulsa</label>
+      </div>
+      <div class="input-email">
+        <label for="email">Email (Opsional):</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email untuk bukti pembayaran">
+      </div>
+      <button type="button" class="btn-beli" onclick="kirimWhatsapp()">Beli Sekarang</button>
+    </section>
+  </div>
+</div>
+  <header class="main-header">
+    <div class="green-line"></div>
+    <h1>WIXYSHOP</h1>
+    <p>Top Up Games Favoritmu & Gunakan Jasa Kami Dengan Baik Wixy Shop</p>
+    <p>Tersedia Berbagai Macam Produk, Layanan & Pembayaran yang bisa digunakan. Layanan CS 24JAM, Proses Manual, Aman, & Pastinya Terjangkau. Dan Semua Harga Disi Itu Harga Cash Bukan Harga Payment Kalau Harga Payment Lebih Murah.</p>
+  </header>
+
+  <section class="pembayaran">
+    <h2>Pembayaran Terjamin</h2>
+    <div class="slider-logo">
+      <img src="dana.jpg" alt="ShopeePay">
+      <img src="gopay.jpg" alt="GoPay">
+      <img src="ovo.jpg" alt="OVO">
+      <img src="xl.jpg" alt="Indosat">
+      <img src="axis.jpg" alt="Indosat">
+    </div>
+    <p class="lainnya">+20 lainnya.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>Halaman</h3>
+      <ul>
+        <li>Halaman Utama</li>
+        <li>Cek Pesanan</li>
+        <li>Daftar Harga</li>
+        <li>Kalkulator WR</li>
+        <li>HP Magic Wheel</li>
+        <li>Kalkulator Zodiac</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Member</h3>
+      <ul>
+        <li>Daftar Member</li>
+        <li>Login Member</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Informasi & Lainnya</h3>
+      <ul>
+        <li>Syarat & Ketentuan</li>
+        <li>Privacy & Policy</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Kontak</h3>
+      <p>Email: wixyshop28@gmail.com</p>
+      <p>Alamat: JL.Bongkor Kec.Sukaratu Kabupaten Tasikmalaya Jawa Barat</p>
+    </div>
+    <div class="copyright">
+      <p>&copy; PT WIXY SHOP JB HOUS TERPERCAYA </p>
+    </div>
+  </footer>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

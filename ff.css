@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+h3 {
+  margin: 15px;
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 15px;
+  margin: 0;
+  position: absolute;
+  top: 58px;
+  left: 104px;
+}
+
+header {
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 35px;
+  background: #222;
+  margin-bottom: 5%;
+  z-index: 999;
+}
+
+header img {
+  height: 50px;
+  max-height: 70px;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.input-search {
+  padding: 20px;
+  margin-left: 50px;
+  border-radius: 30px;
+  width: 500px;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.input-submit {
+  padding: 20px;
+  border-radius: 50px;
+  margin-left: 12px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #2c2c2c;
+  border: none;
+}
+
+.icon-user {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  background: radial-gradient(circle at center, white 30%, transparent 31%),
+              radial-gradient(circle at bottom, white 50%, transparent 51%);
+  background-size: 100% 40%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center, bottom center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.close a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left, .right {
+  padding: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .left, .right {
+    width: 50%;
+    display: block;
+  }
+}
+
+.left .logo {
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.left h2, .left h3 {
+  margin: 10px 0;
+}
+
+.left ol {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.right {
+  background-color: #1e1e1e;
+}
+
+.input-id {
+  background: #2c2c2c;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.item {
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  border: 2px solid #444;
+  transition: 0.3s;
+}
+
+.item:hover {
+  border-color: #00ffcc;
+}
+
+.item span {
+  display: block;
+  color: #ff4c4c;
+  margin-top: 5px;
+}
+
+.link {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  background-color: limegreen;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.vocher {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: limegreen;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list .item {
+  background: #2c2c2c;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.group label {
+  display: block;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.pembayaran {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.pembayaran-opsi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.pembayaran-opsi label {
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1 1 45%;
+  text-align: left;
+  color: #fff;
+}
+
+.pembayaran-opsi input {
+  margin-right: 8px;
+}
+
+.input-email {
+  margin-top: 15px;
+}
+
+.input-email input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 5px;
+}
+
+.btn-beli {
+  margin-top: 15px;
+  width: 100%;
+  background-color: limegreen;
+  color: black;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.green-line {
+  height: 5px;
+  background: limegreen;
+}
+
+.main-header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid limegreen;
+}
+
+.slider-logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 10px 0;
+}
+
+.slider-logo img {
+  width: 80px;
+  height: 160px;
+  border-radius: 15px;
+  transform: rotateY(20deg);
+  transition: transform 0.3s ease;
+}
+
+.slider-logo img:hover {
+  transform: rotateY(0deg) scale(1.05);
+}
+
+.lainnya {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #111;
+  padding: 20px 10px;
+  border-top: 1px solid #444;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: limegreen;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section p {
+  margin: 4px 0;
+}
+
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .input-search,
+  .input-submit,
+  .icon-user {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .slider-logo img {
+    width: 60px;
+    height: 120px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header h6 {
+    font-size: 12px;
+    position: static;
+    margin-top: 5px;
+  }
+
+  .input-id,
+  .btn-beli,
+  .vocher,
+  .link {
+    font-size: 14px;
+  }
+}
+
+/* Responsive untuk Desktop Besar */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
